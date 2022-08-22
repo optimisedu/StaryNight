@@ -1,20 +1,24 @@
-*, *b::before, *b::after{
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
 }
 
-body{
-    overflow: hidden;
-    background: black
+body {
+	overflow: hidden;
+	background: #111;
 }
 
-#canvas1{
-    border: 3px solid white;
-    border-radius: 5px;
-    top: -50%;
-    left: -50%;
-    position: absolute;
-    width: 1024px;
-    height: 811px;
-    transform: translate(-50%,-50%);
-    filter: contrast(110%) brightness(150%) saturate(120%);
-    }
+#stary {
+	border: 1vh double #999;
+	background: transparent;
+	border-radius: 5px;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	width: 1024px;
+	height: 811px;
+	transform: translate(-50%, -50%);
+	webkit-filter: sharpen(1.3), contrast(1.1) brightness(1.5);
+	filter: sharpen(1.3), contrast(1.1) brightness(1.5);
+}
